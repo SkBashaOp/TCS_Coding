@@ -1,0 +1,22 @@
+def insertAtBegin(value,arr,n):
+  nums = [0] * (N+1)
+  for i range(len(arr)-1,-1,-1):
+    nums[i+1]=arr[i]
+  nums[0]=value
+print(*nums) 
+
+def insertAtEnd(value,arr,n):
+ arr.append(value)
+ print(*arr)
+
+
+def insertAtMiddle(value,arr,n,location):
+  nums = [0]*(n+1)
+  for i in range(location):
+    nums[i]=arr[i]
+  for i in range(location,n):
+    nums[i+1]=arr[i]
+  nums[location]=value
+  print(*nums)
+
+
