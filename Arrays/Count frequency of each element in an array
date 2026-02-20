@@ -1,0 +1,10 @@
+from collections import defaultdict
+arr=[1,1,3,3,4,4,3,2,33,0]
+def getFreq(arr):
+    store=defaultdict(int)
+    for num in arr:
+        store[num]+=1
+    for key,val in store.items():
+        print(key,val)
+        
+getFreq(arr)
