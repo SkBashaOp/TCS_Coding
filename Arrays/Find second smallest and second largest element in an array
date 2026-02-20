@@ -1,0 +1,25 @@
+arr=[1,2,3,4,5,6,7,8,9]
+def getSecondLargest(arr):
+    largest= float('-inf')
+    secondlargest = float('-inf')
+    for i in range(len(arr)):
+        if(arr[i]>largest):
+            secondLargest=largest
+            largest=arr[i]
+        elif(arr[i]>secondLargest and arr[i]!=largest):
+            secondLargest=arr[i]
+    return secondLargest
+def getSecondSmallest(arr):
+    small = float('inf')
+    secSmall = float('inf')
+    for i in range(len(arr)):
+        if(arr[i]<small):
+            secSmall=small
+            small=arr[i]
+        elif(arr[i]<secSmall and arr[i]!=small):
+            secSmall=arr[i]
+    return secSmall    
+secL=getSecondLargest(arr)
+secS=getSecondSmallest(arr)
+
+print(secL,secS)
