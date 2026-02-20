@@ -23,3 +23,9 @@ secL=getSecondLargest(arr)
 secS=getSecondSmallest(arr)
 
 print(secL,secS)
+
+///ShortHand
+
+unique_sorted = sorted(list(set(arr)))
+secS = unique_sorted[1]
+secL = unique_sorted[-2]
