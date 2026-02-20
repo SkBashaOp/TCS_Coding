@@ -1,0 +1,9 @@
+def solve(arr):
+    arr.sort()
+    n=len(arr)
+    for i in range(n//2):
+        print(arr[i], end=" ")
+    for i in range(n-1,n//2-1,-1):
+        print(arr[i], end=" ")
+arr=[15,66,433,3345,2,22344,22233,2,1,2]        
+solve(arr)        
