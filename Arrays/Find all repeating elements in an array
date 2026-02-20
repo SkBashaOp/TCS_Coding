@@ -1,0 +1,12 @@
+from collections import defaultdict
+def solve(arr):
+    store=defaultdict(int)
+    for num in arr:
+      store[num]+=1
+    for key,value in store.items():
+      if(value>1):
+       print(key)
+arr=[15,66,433,3345,2,22344,22233,2,1,2,1,1,1,15,1,5,15,15,66,6,6,6,66,66,66]        
+       
+solve(arr)       
+       
