@@ -1,0 +1,6 @@
+def getMin(arr):
+  minElement=float('inf')
+  n=len(arr)
+  for i in range(n):
+    minElement=min(minElement,arr[i])
+  return minElement
