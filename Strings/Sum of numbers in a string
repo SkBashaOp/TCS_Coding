@@ -1,0 +1,11 @@
+num=0
+cur_num=""
+for char in s:
+  if char.isdigit():
+    cur_num+=char
+  elif cur_num:
+    num+=int(cur_num)
+    cur_num=""
+if cur_num:
+  num+=int(cur_num)
+return num
