@@ -1,0 +1,9 @@
+def count_characters(s):
+  for char in s:
+    if char.lower() in 'aeiou':
+      vowels+=1
+    elif char.isAlpha():
+      consonants+=1
+    elif char.isspace():
+      spaces+=1
+  return vowels,consonants,spaces
